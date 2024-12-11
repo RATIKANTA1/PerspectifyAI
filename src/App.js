@@ -5,6 +5,7 @@ import Services from './Components/Services';
 import Contact from './Components/ContactForm';
 import AboutUs from './Components/AboutUs';
 import Booking from './Components/Booking';
+import Carousel from './Components/Carousel';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutUs />
       <Services />
       <Booking /> 
+      <Carousel />
       <Contact />
     </div>
   );
