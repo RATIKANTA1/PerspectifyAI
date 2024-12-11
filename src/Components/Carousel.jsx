@@ -11,6 +11,7 @@ import img5 from '../assets/Gallary/img5.png';
 import img6 from '../assets/Gallary/img6.png';
 
 function Carousel() {
+  
   return (
     <div className="container mx-auto mt-12">
       <Swiper
