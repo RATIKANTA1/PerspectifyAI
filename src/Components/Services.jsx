@@ -4,7 +4,7 @@ import service3 from '../assets/services3.jpg'
 
   function Services() {
     return (
-      <section className="bg-black py-12">
+      <section id='services' className="bg-black py-12">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold text-blue-600 mb-8">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
