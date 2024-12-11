@@ -23,6 +23,14 @@ function Contact() {
             />
           </div>
           <div className="mb-4">
+            <label className="block text-gray-700">Phone</label>
+            <input
+              type="Phone Number"
+              className="w-full p-3 border border-gray-300 rounded"
+              placeholder="Your Phone Number"
+            />
+          </div>
+          <div className="mb-4">
             <label className="block text-gray-700">Message</label>
             <textarea
               className="w-full p-3 border border-gray-300 rounded"
