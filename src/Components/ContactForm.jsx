@@ -1,16 +1,45 @@
-function ContactForm() {
-    return (
-      <section className="p-12 bg-gray-200">
-        <h2 className="text-2xl font-bold text-center">Contact Us</h2>
-        <form className="max-w-lg mx-auto mt-6">
-          <input type="text" placeholder="Your Name" className="w-full p-3 mb-4 border"/>
-          <input type="email" placeholder="Your Email" className="w-full p-3 mb-4 border"/>
-          <textarea placeholder="Your Message" className="w-full p-3 mb-4 border"></textarea>
-          <button type="submit" className="w-full bg-blue-600 p-3 text-white">Send Message</button>
+import React from 'react';
+
+function Contact() {
+  return (
+    <section className="bg-gray-700 py-12">
+      <div className="container mx-auto max-w-lg">
+        <h2 className="text-3xl font-bold text-blue-600 mb-8 text-center">Contact Us</h2>
+        <form className="bg-white p-6 rounded shadow-md">
+          <div className="mb-4">
+            <label className="block text-gray-700">Name</label>
+            <input
+              type="text"
+              className="w-full p-3 border border-gray-300 rounded"
+              placeholder="Your Name"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Email</label>
+            <input
+              type="email"
+              className="w-full p-3 border border-gray-300 rounded"
+              placeholder="Your Email"
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-gray-700">Message</label>
+            <textarea
+              className="w-full p-3 border border-gray-300 rounded"
+              placeholder="Your Message"
+              rows="4"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-600 text-white p-3 rounded w-full hover:bg-blue-500"
+          >
+            Send Message
+          </button>
         </form>
-      </section>
-    );
-  }
-  
-  export default ContactForm;
-  
+      </div>
+    </section>
+  );
+}
+
+export default Contact;
