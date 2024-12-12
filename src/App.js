@@ -6,6 +6,7 @@ import Contact from './Components/ContactForm';
 import AboutUs from './Components/AboutUs';
 import Booking from './Components/Booking';
 import Carousel from './Components/Carousel';
+import BlogSection from './Components/BlogSection';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       <Services />
       <Booking /> 
       <Carousel />
+      <BlogSection/>
       <Contact />
+      
     </div>
   );
 }
