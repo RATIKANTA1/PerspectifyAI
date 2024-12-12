@@ -111,7 +111,7 @@ function Booking() {
           <h2 className="text-2xl font-bold mb-6 text-blue-400">
             How does it work?
           </h2>
-          <ul className="list-disc pl-5 space-y-4 text-gray-300 text-left">
+          <ul className="list-disc pl-5 space-y-4 text-gray-300 text-left text-lg py-4">
             <li>Take a financial literacy assessment to understand your strengths.</li>
             <li>Connect with your personalized AI mentor for tailored guidance.</li>
             <li>Engage with interactive lessons and tools to enhance financial skills.</li>
