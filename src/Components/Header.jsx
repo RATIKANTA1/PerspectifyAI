@@ -17,10 +17,9 @@ function Header() {
  const toggleMenu2 = () => {
    setMenuOpen((prevState) => !prevState);
  };
- 
 
   return (
-    <header className="bg-gray-900 p-4 text-white top-0 sticky z-50">
+    <header className="bg-gray-900 p-4 text-white top-0 sticky z-50 shadow-lg shadow-gray-700">
   <nav className="flex justify-between items-center">
     <h1 className="text-2xl">PerSpectify_Ai</h1>
     <div className="md:hidden">

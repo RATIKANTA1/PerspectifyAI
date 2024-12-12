@@ -2,13 +2,13 @@ import React from 'react';
 
 function BlogSection() {
   return (
-    <section id='blog' className="container mx-auto py-12 bg-black">
+    <section id='blog' className="container mx-auto py-20 bg-black">
       {/* Blog Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-white">Blog</h1>
+        <h1 className="text-4xl font-bold text-blue-500">Blog</h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 px-3">
         {/* First Blog: Malcolm Hodnyl */}
         <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
           <h3 className="text-3xl font-bold text-white text-center mb-2">Malcolm Hodnyl</h3>
