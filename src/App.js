@@ -7,6 +7,8 @@ import AboutUs from './Components/AboutUs';
 import Booking from './Components/Booking';
 import Carousel from './Components/Carousel';
 import BlogSection from './Components/BlogSection';
+import ChatBot from './Components/ChatBot';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       <Carousel />
       <BlogSection/>
       <Contact />
+      <ChatBot/>
       
     </div>
   );
