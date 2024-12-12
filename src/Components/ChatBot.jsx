@@ -23,7 +23,7 @@ function ChatBot() {
             src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/12/12/13/20241212135639-ETXGY2NY.json"
             className="w-full h-full"
             frameBorder="0"
-            title="Chatbot Interface" // Added title for accessibility
+            title="Chatbot Interface" 
           ></iframe>
         </div>
       )}
