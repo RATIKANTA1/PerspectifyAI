@@ -7,14 +7,14 @@ function ChatBot() {
 
   return (
     <div>
-      {/* Chat button */}
+      
       <button
         onClick={toggleChat}
         className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center shadow-lg text-2xl"
       >
         💬
       </button>
-      
+
 
       {/* Chat widget */}
       {showChat && (
