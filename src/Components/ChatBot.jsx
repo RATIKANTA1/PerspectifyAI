@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { MdMessage } from "react-icons/md";
 function ChatBot() {
   const [showChat, setShowChat] = useState(false);
 
@@ -10,9 +10,9 @@ function ChatBot() {
       
       <button
         onClick={toggleChat}
-        className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center shadow-lg text-2xl"
+        className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-blue-500 text-white flex justify-center items-center shadow-lg text-2xl z-20"
       >
-        💬
+       <MdMessage/>
       </button>
 
 
