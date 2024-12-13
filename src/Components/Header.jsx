@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-scroll";  
-
+import img  from "../assets/ai.png"
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,7 +15,7 @@ function Header() {
   return (
     <header className="bg-gray-900 p-4 text-white top-0 sticky z-50 shadow-lg shadow-gray-700">
       <nav className="flex justify-between items-center">
-        <a href="/" className="text-2xl">PerSpectify_Ai</a>
+        <a href="/" className="text-2xl md:text-lg lg:text-2xl flex justify-between items-center">PerSpectify_Ai <img src={img} alt="load" className="w-12 h-12 ml-2" /></a>
         
         {/* Mobile Menu Button */}
         <div className="md:hidden">
