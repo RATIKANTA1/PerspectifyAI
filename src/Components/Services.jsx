@@ -20,7 +20,6 @@ import service3 from '../assets/tele25.jpg'
               Start Your Journey with PerspectifyAI. Create your own personalized via Telegram.
             </p>
 
-            //w-full py-3  rounded-lg 
             <a
               href="https://t.me/perspectifybot?start=1714227342318"
               className="px-3 py-2 bg-gradient-to-r from-blue-600 to-blue-400 text-white  mt-4 rounded-md hover:from-blue-500 hover:to-blue-300 transition-all duration-300 font-semibold block"
