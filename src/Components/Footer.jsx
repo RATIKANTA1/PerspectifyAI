@@ -1,5 +1,7 @@
 import React from "react";
-
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareTwitter } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-8">
@@ -13,6 +15,36 @@ function Footer() {
             </p>
           </div>
 
+          {/* Social Media */}
+          <div className="w-full md:w-1/3">
+            <h3 className="text-lg font-bold mb-2">Follow Us</h3>
+            <div className="flex space-x-4">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 text-2xl "
+              >
+                <FaFacebookSquare  />
+              </a>
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 text-2xl"
+              >
+                <FaSquareTwitter/>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-blue-500 text-2xl "
+              >
+               <FaLinkedin />
+              </a>
+            </div>
+          </div>
           {/* Links */}
           <div className="w-full md:w-1/3 mb-6 md:mb-0 ">
             <h3 className="text-lg font-bold mb-2">Quick Links</h3>
@@ -38,36 +70,6 @@ function Footer() {
             </ul>
           </div>
 
-          {/* Social Media */}
-          <div className="w-full md:w-1/3">
-            <h3 className="text-lg font-bold mb-2">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500"
-              >
-                <i className="fab fa-facebook-f"></i> Facebook
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500"
-              >
-                <i className="fab fa-twitter"></i> Twitter
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-500"
-              >
-                <i className="fab fa-linkedin-in"></i> LinkedIn
-              </a>
-            </div>
-          </div>
         </div>
       </div>
         <div className="mt-6 text-center text-sm text-gray-400">
