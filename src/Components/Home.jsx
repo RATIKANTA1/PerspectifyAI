@@ -35,9 +35,9 @@ function Home() {
   const handleTransitionEnd = () => {
     setIsTransitioning(false);
     if (currentIndex === 0) {
-      setCurrentIndex(images.length - 2); // Jump to the last actual image
+      setCurrentIndex(images.length - 2); 
     } else if (currentIndex === images.length - 1) {
-      setCurrentIndex(1); // Jump to the first actual image
+      setCurrentIndex(1); 
     }
   };
 
@@ -63,7 +63,7 @@ function Home() {
 
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-45 p-4 sm:p-8">
-          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-900 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold mb-4 text-blue-600 text-center">
             Guiding your financial Journey.
           </h2>
           <p className="text-sm sm:text-base md:text-md lg:text-xl mb-8 text-bold text-white text-center max-w-2xl leading-relaxed">
@@ -81,7 +81,7 @@ function Home() {
       {/* Previous Button */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-800 text-white px-3 py-2 rounded-full hover:bg-blue-600 z-20"
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-800 text-white px-4 py-2 rounded-full hover:bg-blue-600 z-20"
       >
         &#10094;
       </button>
@@ -89,7 +89,7 @@ function Home() {
       {/* Next Button */}
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-800 text-white px-3 py-2 rounded-full hover:bg-blue-600 z-20"
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-800 text-white px-4 py-2 rounded-full hover:bg-blue-600 z-20"
       >
         &#10095;
       </button>

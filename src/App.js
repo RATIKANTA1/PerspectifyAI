@@ -8,8 +8,7 @@ import Booking from './Components/Booking';
 import Carousel from './Components/Carousel';
 import BlogSection from './Components/BlogSection';
 import ChatBot from './Components/ChatBot';
-
-
+import Footer from './Components/Footer';
 function App() {
   return (
     <div>
@@ -22,6 +21,8 @@ function App() {
       <BlogSection/>
       <Contact />
       <ChatBot/>
+      <Footer/>
+
       
     </div>
   );
