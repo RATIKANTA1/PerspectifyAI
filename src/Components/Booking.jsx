@@ -24,7 +24,6 @@ function Booking() {
     e.preventDefault();
     console.log('Appointment Data:', formData);
   };
-
   return (
     <section id="book-appointment" className="bg-black text-white min-h-screen py-24 px-0 flex items-center justify-center">
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row gap-8">
