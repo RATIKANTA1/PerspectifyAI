@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 
 function Booking() {
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     phone: '',
+    date: '',
     time: '',
     message: ''
   });
@@ -12,8 +14,8 @@ function Booking() {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === 'name' && !/^[a-zA-Z\s]*$/.test(value)) return;
-    if (name === 'phone' && !/^[0-9]*$/.test(value)) return; 
+    if ((name === 'firstName' || name === 'lastName') && !/^[a-zA-Z\s]*$/.test(value)) return;
+    if (name === 'phone' && !/^[0-9]*$/.test(value)) return;
 
     setFormData({ ...formData, [name]: value });
   };
@@ -24,27 +26,40 @@ function Booking() {
   };
 
   return (
-    <section id="book-appointment" className="bg-black text-white min-h-screen py-12 px-0 flex items-center justify-center">
-      <div className="container mx-auto max-w-6xl flex flex-col md:flex-row  gap-8 ">
+    <section id="book-appointment" className="bg-black text-white min-h-screen py-24 px-0 flex items-center justify-center">
+      <div className="container mx-auto max-w-6xl flex flex-col md:flex-row gap-8">
         {/* Left: Booking Form */}
         <div className="w-full md:w-1/2 bg-gray-900 p-8 rounded-lg shadow-xl">
           <h2 className="text-3xl font-bold text-center text-blue-500 mb-8">
             Request a New Appointment
           </h2>
           <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
-            {/* Name & Email */}
+            {/* First Name & Last Name */}
             <div className="col-span-1">
-              <label className="block text-gray-400 text-sm mb-2">Name</label>
+              <label className="block text-gray-400 text-sm mb-2">First Name</label>
               <input
                 type="text"
-                name="name"
-                value={formData.name}
+                name="firstName"
+                value={formData.firstName}
                 onChange={handleChange}
                 className="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-white"
-                placeholder="Your Name"
+                placeholder="First Name"
                 required
               />
             </div>
+            <div className="col-span-1">
+              <label className="block text-gray-400 text-sm mb-2">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                className="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-white"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+            {/* Email */}
             <div className="col-span-1">
               <label className="block text-gray-400 text-sm mb-2">Email</label>
               <input
@@ -57,7 +72,7 @@ function Booking() {
                 required
               />
             </div>
-            {/* Phone & Time */}
+            {/* Phone */}
             <div className="col-span-1">
               <label className="block text-gray-400 text-sm mb-2">Phone</label>
               <input
@@ -70,8 +85,21 @@ function Booking() {
                 required
               />
             </div>
+            {/* Appointment Date */}
             <div className="col-span-1">
-              <label className="block text-gray-400 text-sm mb-2">Time</label>
+              <label className="block text-gray-400 text-sm mb-2">Appointment Date</label>
+              <input
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                className="w-full p-3 border border-gray-700 rounded-lg bg-gray-800 text-white"
+                required
+              />
+            </div>
+            {/* Appointment Time */}
+            <div className="col-span-1">
+              <label className="block text-gray-400 text-sm mb-2">Appointment Time</label>
               <input
                 type="time"
                 name="time"
