@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player'; // Import ReactPlayer
-
+ import video from  '../assets/video.mp4'
 function AboutUs() {
   return (
     <div id="about" className="bg-black py-20">
@@ -20,17 +20,12 @@ function AboutUs() {
       {/* Video Section */}
       <div className="flex justify-center items-center bg-black ">
         <div className="w-full md:w-3/4 lg:w-1/2 h-[28rem]">
-          <ReactPlayer
-            url="https://repackager.wixmp.com/video.wixstatic.com/video/0bf7f7_6b46815eadb84325be620e57949563c6/,360p,480p,720p,1080p,/mp4/file.mp4.urlset/master.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlb19pZCI6IjBiZjdmN182YjQ2ODE1ZWFkYjg0MzI1YmU2MjBlNTc5NDk1NjNjNiIsImlzX2NsaXAiOmZhbHNlLCJpYXQiOjE3MzQwMjI4MDAsImV4cCI6MTczNDEwOTIwMCwiaXNzIjoiYXBwOnZvZCIsInN1YiI6InVzZXI6dm9kIn0.Ay4aa41wCO14nBLHQNQPK95RIjbh10krexmJFsSCWIY"
+         <ReactPlayer
+            url={video}
             controls
             playing={false}
             width="100%"
             height="100%"
-            config={{
-              file: {
-                forceHLS: true, // Forces HLS support
-              },
-            }}
             className="rounded-md shadow-lg"
           />
         </div>
@@ -43,3 +38,4 @@ function AboutUs() {
 }
 
 export default AboutUs;
+ 
